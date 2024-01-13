@@ -6,19 +6,39 @@
 
 {% block body %}
 
-<div class="container my-5 px-5">
+<div class="container-fluid px-0 pb-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="    color: #040a0e;">
+            <h5>Welcome to Portfolio</h5>
+            <p>This Contain is all About Me, Read it.</p>
+          </div>
+        </div>
+</div>
+
+<div class="container my-3 px-5">
+  <h2>About Me</h2>
     <div class="card mb-3" style="max-width: 1200px;" style="max-height: 800px;">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 px-0">
             <img src="/static/Mayur.jpg" class="img-fluid rounded-start" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8" style="background-color: #c8d6d2;">
             <div class="card-body">
               <h3 class="card-title mb-5" style="line-height: 30px; font-weight:bold;">Mayur Vitthal Korhale</h3>
                <p class="card-text" style="line-height: 30px; font-weight:600;">I am Mr. Mayur Vitthal Korhale, Currently Pursing BE in Electronic and Telecommunication from Pune University, I have completed my 10th from Mary Memorial School, Patas and 12th from Tuljaram Chaturchand College, Baramati.
-                I have keen intrest in Python and Do Project on Django and and Developing Mini Game's. 
-                Hobbies :- My Hobbies are Playing Cricket and Treking the Forts and Hills with Friends. 
-                Strength :- I like to update my self with new version.
+                I have keen intrest in Python and Do Project on Django and and Developing Mini Game's. <br>
+                Project's :- 1.Web API's using Django, 2.Game Development using Python, 3. Destop AI Using Python. <br>
+                Hobbies :- My Hobbies are Playing Cricket and Treking the Forts and Hills with Friends.  <br>
+                Strength :- I like to update my self with new version. <br>
+                <a href="https://drive.google.com/file/d/1DcRpZETt1z2Hf52JuDZT39oYRNhGZCw2/view?usp=drivesdk" target="_blank" role="button" class="btn btn-danger mt-2">Download CV</a>
               </p>
               <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
             </div>
